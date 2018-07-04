@@ -1,0 +1,6 @@
+firstJoin_message: '&a<player> &7has joined the battle!'
+
+join_message: '&e<player> &7has returned to battle!'
+leave_message: '&e<player> &7has left the battle!'
+
+faction_one: 'Yulania'
