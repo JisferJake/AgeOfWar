@@ -1,6 +1,12 @@
 name: AgeOfWar
 version: 1.0
 author: ArchMageGaming
-main: me.ArchMageGaming.AgeOfWar
-description: The Plugin that runs the AgeOfWar server
+main: me.ArchMageGaming.AgeOfWar.Main
 
+commands:
+  hello:
+   aliases: [hi]
+   description: This is the hello command!
+  join:
+   aliases: [faction]
+   description: Joins a Faction

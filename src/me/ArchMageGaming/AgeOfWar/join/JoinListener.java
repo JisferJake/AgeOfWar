@@ -11,19 +11,19 @@ import me.ArchMageGaming.AgeOfWar.Main;
 import me.ArchMageGaming.AgeOfWar.Utils.Utils;
 
 public class JoinListener  implements Listener {
-	
+
 	private Main plugin;
 
 	public JoinListener(Main plugin) {
 		this.plugin = plugin;
-		
+
 		Bukkit.getPluginManager().registerEvents(this, plugin);
 	}
-	
+
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
-		
+
 		if(!p.hasPlayedBefore()) {
 			Bukkit.broadcastMessage(
 					Utils.chat(plugin.getConfig().getString("firstJoin_message").replace("<player>", p.getName())));
@@ -32,12 +32,12 @@ public class JoinListener  implements Listener {
 					Utils.chat(plugin.getConfig().getString("join_message").replace("<player>", p.getDisplayName())));
 		}
 	}
-	
+
 	public void onLeave(PlayerQuitEvent q) {
 		Player p = q.getPlayer();
 		Bukkit.broadcastMessage(
 				Utils.chat(plugin.getConfig().getString("leave_message").replace("<player>", p.getDisplayName())));
 	}
-	
+
 }
 
