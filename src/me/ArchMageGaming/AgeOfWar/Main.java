@@ -8,10 +8,12 @@ import me.ArchMageGaming.AgeOfWar.join.JoinListener;
 
 public class Main extends JavaPlugin {
 
+	//when the plugin is enabled, do this
 	@Override
 	public void onEnable() {
 		saveDefaultConfig();
 
+		//initializes functions of plugin
 		new Hello(this);
 		new JoinListener(this);
 		new JoinFaction(this);
