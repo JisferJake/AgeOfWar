@@ -1,6 +1,9 @@
 firstJoin_message: '&a<player> &7has joined the battle!'
 
-join_message: '&e<player> &7has returned to battle!'
-leave_message: '&e<player> &7has left the battle!'
+join_message: '&a<player> &7has returned to battle!'
+leave_message: '&c<player> &7has left the battle!'
 
 faction_one: 'Yulania'
+faction_two: 'Emporia'
+faction_three: 'Magonia'
+faction_four: 'Aveline'

@@ -39,14 +39,5 @@ public class JoinListener  implements Listener {
 		}
 	}
 
-	//when player leaves, do this
-	public void onLeave(PlayerQuitEvent q) {
-		//get player who leaves
-		Player p = q.getPlayer();
-		//sends message
-		Bukkit.broadcastMessage(
-				Utils.chat(plugin.getConfig().getString("leave_message").replace("<player>", p.getDisplayName())));
-	}
-
 }
 
